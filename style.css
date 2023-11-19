@@ -4,28 +4,38 @@
    
 }
 .head{
+
     display:flex;
     border : 4px solid black;
     background-color: black;
     height:50px;
     width:100%;
-    padding-left:25px;
-    justify-content:space-around;
+    padding-right:0px;
     justify-content:center;
     align-items:center;
+    flex-wrap:wrap;
+    position:fixed;
+    top:0px;
+
+
 }
 #logo,#h1,#h2,#h3,#h4,#h5,#h6,#h7,#h8,#h9{
+    background-color:grey;
+    border-radius: 30%;
     color:white;
     text-transform: capitalize;
     font-size:20px;
     margin-right:100px;
+    width:100px;
     text-decoration:none;
-
-    
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
 }
 #logo{
+    display:flex;
     font-size: 25px;
-    color: #f08804;
+    color:yellow;
 
 }
 button{
@@ -37,8 +47,6 @@ button{
 input{
     flex:1;
     height:50;
-    border:0;
-    outline:0;
     font-size:25px;
     color:black;
 }
@@ -49,11 +57,13 @@ hr{
     display:flex;
     justify-content:center;
     align-items:center;
+    flex-wrap:wrap;
     background-color: black;
     width:100%;
     height:55px;
     position:relative;
     top:0px;
+
 }
 #searchbar{
     width:850px;
@@ -166,7 +176,8 @@ body{
 #container {
     display: flex;
     width: 100%;   
-    height: 1500px;
+    height: 100%;
+    background-color:grey;
     border: 2px solid black;
     flex-wrap:wrap;
 
